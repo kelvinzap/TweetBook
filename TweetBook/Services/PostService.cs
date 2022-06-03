@@ -42,5 +42,13 @@ namespace TweetBook.Services
 
             return deleted > 0;
         }
+
+        public async Task<bool> UpdatePostAsync(Post post)
+        {
+            _context.Posts.Update(post);
+            var updated = await _context.SaveChangesAsync();
+
+            return updated > 0;
+        }
     }
 }

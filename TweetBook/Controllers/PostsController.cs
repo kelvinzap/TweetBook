@@ -26,6 +26,14 @@ namespace TweetBook.Controllers
             return Ok(await _postService.GetAllAsync());
         }
 
+        [HttpGet(ApiRoutes.Posts.Get)]
+        public async Task<IActionResult> Get([FromRoute] Guid postId)
+        {
+            var post = await _postService.GetPostByIdAsync(postId);
+            
+            return (post == null) ? NotFound() : Ok(post);
+        }
+        
         [HttpPost(ApiRoutes.Posts.Create)]
         public async Task<IActionResult> Create([FromBody] CreatePostRequest request)
         {
@@ -54,12 +62,23 @@ namespace TweetBook.Controllers
             return Created(locationUri, response);
         }
 
-        [HttpGet(ApiRoutes.Posts.Get)]
-        public async Task<IActionResult> Get([FromRoute] Guid postId)
+        [HttpPut(ApiRoutes.Posts.Update)]
+        public async Task<IActionResult> Update([FromRoute] Guid postId, [FromBody] UpdatePostRequest request)
         {
+            if (request == null || string.IsNullOrWhiteSpace(request.Name))
+                return BadRequest(new {error = "Invalid Request" });
+
             var post = await _postService.GetPostByIdAsync(postId);
             
-            return (post == null) ? NotFound() : Ok(post);
+            if (post == null)
+                return NotFound();
+            
+            post.Name = request.Name;
+
+            var updated = await _postService.UpdatePostAsync(post);
+            
+            return (updated) ? Ok(post) : NotFound();
+
         }
 
         [HttpDelete(ApiRoutes.Posts.Delete)]
