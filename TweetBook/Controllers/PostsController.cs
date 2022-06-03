@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TweetBook.Contracts;
@@ -19,13 +20,13 @@ namespace TweetBook.Controllers
             _postService = postService;
         }
 
-        [HttpGet(ApiRoutes.Post.Get)]
-        public async Task<IActionResult> Get()
+        [HttpGet(ApiRoutes.Posts.GetAll)]
+        public async Task<IActionResult> GetAll()
         {
-            return Ok(await _postService.GetAsync());
+            return Ok(await _postService.GetAllAsync());
         }
 
-        [HttpPost(ApiRoutes.Post.Create)]
+        [HttpPost(ApiRoutes.Posts.Create)]
         public async Task<IActionResult> Create([FromBody] CreatePostRequest request)
         {
             if (request == null || string.IsNullOrWhiteSpace(request.Name))
@@ -40,12 +41,39 @@ namespace TweetBook.Controllers
             
             if (!created)
                 return BadRequest(new {error = "Invalid Request" });
+
+            var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
+            var locationUri = baseUrl + "/" + ApiRoutes.Posts.GetAll.Replace("{postId}", post.Id.ToString());
             
-            return Ok(new CreatePostResponse
+            var response = new CreatePostResponse
             {
                 Id = post.Id,
                 Name = post.Name
-            });
+            };
+            
+            return Created(locationUri, response);
+        }
+
+        [HttpGet(ApiRoutes.Posts.Get)]
+        public async Task<IActionResult> Get([FromRoute] Guid postId)
+        {
+            var post = await _postService.GetPostByIdAsync(postId);
+            
+            return (post == null) ? NotFound() : Ok(post);
+        }
+
+        [HttpDelete(ApiRoutes.Posts.Delete)]
+        public async Task<IActionResult> Delete([FromRoute] Guid postId)
+        {
+            var post = await _postService.GetPostByIdAsync(postId);
+
+            if (post == null)
+                return NotFound();
+            
+            var deleted = await _postService.DeletePostAsync(post);
+
+            return (deleted) ? NoContent() : NotFound();
         }
     }
+    
 }

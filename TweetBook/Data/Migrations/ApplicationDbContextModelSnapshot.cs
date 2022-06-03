@@ -212,7 +212,7 @@ namespace TweetBook.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("TweetBook.Domain.Post", b =>
+            modelBuilder.Entity("TweetBook.Domain.Posts", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

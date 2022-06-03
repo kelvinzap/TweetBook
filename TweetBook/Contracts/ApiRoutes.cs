@@ -8,10 +8,12 @@ namespace TweetBook.Contracts
         private const string Version = "v1";
         private const string Base = Root + "/" + Version;
         
-        public static class Post
+        public static class Posts
         {
-            public const string Get = Base + "/posts";
+            public const string GetAll = Base + "/posts";
             public const string Create = Base + "/Posts";
+            public const string Get = Base + "/posts/{postId}";
+            public const string Delete = Base + "/posts/{postId}";
         }
 
     }

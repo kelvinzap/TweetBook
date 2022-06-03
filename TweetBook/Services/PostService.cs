@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using TweetBook.Data;
@@ -15,7 +17,7 @@ namespace TweetBook.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<Post>> GetAsync()
+        public async Task<IEnumerable<Post>> GetAllAsync()
         {
             return await _context.Posts.ToListAsync();
         }
@@ -26,6 +28,19 @@ namespace TweetBook.Services
             var created = await _context.SaveChangesAsync();
             
             return created > 0;
+        }
+
+        public async Task<Post> GetPostByIdAsync(Guid postId)
+        {
+            return await _context.Posts.SingleOrDefaultAsync(x => x.Id == postId);
+        }
+
+        public async Task<bool> DeletePostAsync(Post post)
+        {
+            _context.Posts.Remove(post);
+            var deleted = await _context.SaveChangesAsync();
+
+            return deleted > 0;
         }
     }
 }
