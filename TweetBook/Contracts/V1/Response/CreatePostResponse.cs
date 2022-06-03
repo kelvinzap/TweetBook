@@ -1,11 +1,9 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 
-namespace TweetBook.Domain
+namespace TweetBook.Contracts.V1.Response
 {
-    public class Post
+    public class CreatePostResponse
     {
-        [Key]
         public Guid Id { get; set; }
         public string Name { get; set; }
     }

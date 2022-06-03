@@ -6,6 +6,9 @@ namespace TweetBook.Services
 {
     public interface IPostService
     {
-        Task<IEnumerable<Post>> GetAsync { get; set; }
+        Task<IEnumerable<Post>> GetAsync();
+        Task<bool> CreateAsync(Post post);
+
+
     }
 }

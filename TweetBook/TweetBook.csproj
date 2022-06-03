@@ -19,11 +19,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Contracts\V1\Request" />
-      <Folder Include="Contracts\V1\Response" />
-    </ItemGroup>
-
-    <ItemGroup>
       <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Shared\Error.cshtml" />
