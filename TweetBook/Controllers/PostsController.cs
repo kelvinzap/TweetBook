@@ -9,6 +9,7 @@ using TweetBook.Contracts.V1.Request;
 using TweetBook.Contracts.V1.Response;
 using TweetBook.Data;
 using TweetBook.Domain;
+using TweetBook.Extensions;
 using TweetBook.Services;
 
 namespace TweetBook.Controllers
@@ -45,7 +46,8 @@ namespace TweetBook.Controllers
             
             var post = new Post
             {
-                Name = request.Name
+                Name = request.Name,
+                UserId = HttpContext.GetUserById()
             };
 
             var created = await _postService.CreateAsync(post);
@@ -72,10 +74,15 @@ namespace TweetBook.Controllers
                 return BadRequest(new {error = "Invalid Request" });
 
             var post = await _postService.GetPostByIdAsync(postId);
-            
+
             if (post == null)
                 return NotFound();
-            
+
+            if (HttpContext.GetUserById() != post.UserId)
+            {
+                return Unauthorized();
+            }
+
             post.Name = request.Name;
 
             var updated = await _postService.UpdatePostAsync(post);
