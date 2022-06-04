@@ -70,6 +70,13 @@ namespace TweetBook.Controllers
         [HttpPut(ApiRoutes.Posts.Update)]
         public async Task<IActionResult> Update([FromRoute] Guid postId, [FromBody] UpdatePostRequest request)
         {
+            var userOwnsPost = await _postService.UserOwnsPost(postId, HttpContext.GetUserById());
+            
+            if (!userOwnsPost)
+            {
+                return BadRequest(new {errors = "You cannot perform this action"});
+            }
+            
             if (request == null || string.IsNullOrWhiteSpace(request.Name))
                 return BadRequest(new {error = "Invalid Request" });
 
@@ -77,11 +84,6 @@ namespace TweetBook.Controllers
 
             if (post == null)
                 return NotFound();
-
-            if (HttpContext.GetUserById() != post.UserId)
-            {
-                return Unauthorized();
-            }
 
             post.Name = request.Name;
 
@@ -94,6 +96,13 @@ namespace TweetBook.Controllers
         [HttpDelete(ApiRoutes.Posts.Delete)]
         public async Task<IActionResult> Delete([FromRoute] Guid postId)
         {
+            var userOwnsPost = await _postService.UserOwnsPost(postId, HttpContext.GetUserById());
+            
+            if (!userOwnsPost)
+            {
+                return BadRequest(new {errors = "You cannot perform this action"});
+            }
+            
             var post = await _postService.GetPostByIdAsync(postId);
 
             if (post == null)
