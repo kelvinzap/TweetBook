@@ -66,3 +66,10 @@ C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\obj\Debug\net5.0\TweetBoo
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\obj\Debug\net5.0\ref\TweetBook.dll
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\obj\Debug\net5.0\TweetBook.pdb
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\obj\Debug\net5.0\TweetBook.genruntimeconfig.cache
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
