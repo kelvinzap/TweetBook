@@ -24,5 +24,11 @@ namespace TweetBook.Contracts
             public const string Refresh = Base + "/identity/refresh";
         }
 
+        public static class Tags
+        {
+            public const string Create = Base + "/Tags";
+            public const string GetAll = Base + "/Tags";
+        }
+
     }
 }

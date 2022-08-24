@@ -1,19 +1,17 @@
 ﻿using System;
-using System.Collections;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
 
 namespace TweetBook.Domain
 {
-    public class Post
+    public class Tag
     {
         [Key]
-        public Guid Id { get; set; }
         public string Name { get; set; }
-        public string UserId { get; set; }
-        [ForeignKey(nameof(UserId))]
-        public IdentityUser User { get; set; }
-        
+        public string CreatorId { get; set; }
+        [ForeignKey(nameof(CreatorId))]
+        public IdentityUser CreatedBy { get; set; }
+        public DateTime CreatedOn { get; set; }
     }
 }
