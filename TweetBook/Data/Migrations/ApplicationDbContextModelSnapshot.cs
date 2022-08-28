@@ -356,8 +356,8 @@ namespace TweetBook.Data.Migrations
 
             modelBuilder.Entity("TweetBook.Domain.PostTag", b =>
                 {
-                    b.HasOne("TweetBook.Domain.Post", "Post")
-                        .WithMany()
+                    b.HasOne("TweetBook.Domain.Post", null)
+                        .WithMany("Tags")
                         .HasForeignKey("PostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -367,8 +367,6 @@ namespace TweetBook.Data.Migrations
                         .HasForeignKey("TagName")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Post");
 
                     b.Navigation("Tag");
                 });
@@ -389,6 +387,11 @@ namespace TweetBook.Data.Migrations
                         .HasForeignKey("CreatorId");
 
                     b.Navigation("CreatedBy");
+                });
+
+            modelBuilder.Entity("TweetBook.Domain.Post", b =>
+                {
+                    b.Navigation("Tags");
                 });
 #pragma warning restore 612, 618
         }

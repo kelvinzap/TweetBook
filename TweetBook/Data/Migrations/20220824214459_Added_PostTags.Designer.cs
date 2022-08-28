@@ -9,7 +9,7 @@ using TweetBook.Data;
 namespace TweetBook.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220824154803_Added_PostTags")]
+    [Migration("20220824214459_Added_PostTags")]
     partial class Added_PostTags
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

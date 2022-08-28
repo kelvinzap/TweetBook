@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -43,13 +44,20 @@ namespace TweetBook.Controllers
         {
             if (request == null || string.IsNullOrWhiteSpace(request.Name))
                 return BadRequest(new {error = "Invalid Request" });
-            
+            var tags = request.Tags.Select(tagName => new PostTag { TagName = tagName }).ToList();
+
             var post = new Post
             {
+                Id = Guid.NewGuid(),
                 Name = request.Name,
-                UserId = HttpContext.GetUserById()
+                UserId = HttpContext.GetUserById(),
+                Tags = tags
             };
-
+            foreach (var postTag in post.Tags)
+            {
+                postTag.PostId = post.Id; 
+            }
+            
             var created = await _postService.CreateAsync(post);
             
             if (!created)
