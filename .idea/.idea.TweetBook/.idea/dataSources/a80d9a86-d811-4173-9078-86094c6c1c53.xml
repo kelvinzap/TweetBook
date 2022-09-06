@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="app">
-  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.39">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.43">
     <root id="1">
       <ServerVersion>3.38.0</ServerVersion>
     </root>
@@ -1372,7 +1372,6 @@
       <ColNames>RoleId</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>Id</RefColNames>
-      <RefKeyName>PK_AspNetRoles</RefKeyName>
       <RefTableName>AspNetRoles</RefTableName>
     </foreign-key>
     <index id="507" parent="488" name="IX_AspNetRoleClaims_RoleId">
@@ -1381,6 +1380,7 @@
     <key id="508" parent="488" name="PK_AspNetRoleClaims">
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexColNames>Id</UnderlyingIndexColNames>
     </key>
     <column id="509" parent="489" name="Id">
       <DataType>TEXT|0s</DataType>
@@ -1435,7 +1435,6 @@
       <ColNames>UserId</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>Id</RefColNames>
-      <RefKeyName>PK_AspNetUsers</RefKeyName>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
     <index id="521" parent="490" name="IX_AspNetUserClaims_UserId">
@@ -1444,6 +1443,7 @@
     <key id="522" parent="490" name="PK_AspNetUserClaims">
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexColNames>Id</UnderlyingIndexColNames>
     </key>
     <column id="523" parent="491" name="LoginProvider">
       <DataType>TEXT|0s</DataType>
@@ -1468,7 +1468,6 @@
       <ColNames>UserId</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>Id</RefColNames>
-      <RefKeyName>PK_AspNetUsers</RefKeyName>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
     <index id="528" parent="491" name="sqlite_autoindex_AspNetUserLogins_1">
@@ -1500,14 +1499,12 @@ ProviderKey</ColNames>
       <ColNames>UserId</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>Id</RefColNames>
-      <RefKeyName>PK_AspNetUsers</RefKeyName>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
     <foreign-key id="534" parent="492" name="FK_AspNetUserRoles_AspNetRoles_RoleId">
       <ColNames>RoleId</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>Id</RefColNames>
-      <RefKeyName>PK_AspNetRoles</RefKeyName>
       <RefTableName>AspNetRoles</RefTableName>
     </foreign-key>
     <index id="535" parent="492" name="sqlite_autoindex_AspNetUserRoles_1">
@@ -1658,14 +1655,12 @@ Name</ColNames>
       <ColNames>TagName</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>Name</RefColNames>
-      <RefKeyName>PK_Tags</RefKeyName>
       <RefTableName>Tags</RefTableName>
     </foreign-key>
     <foreign-key id="567" parent="495" name="FK_PostTags_Posts_PostId">
       <ColNames>PostId</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>Id</RefColNames>
-      <RefKeyName>PK_Posts</RefKeyName>
       <RefTableName>Posts</RefTableName>
     </foreign-key>
     <index id="568" parent="495" name="sqlite_autoindex_PostTags_1">
@@ -1700,7 +1695,6 @@ PostId</ColNames>
       <ColNames>UserId</ColNames>
       <OnDelete>restrict</OnDelete>
       <RefColNames>Id</RefColNames>
-      <RefKeyName>PK_AspNetUsers</RefKeyName>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
     <index id="575" parent="496" name="sqlite_autoindex_Posts_1">
@@ -1753,7 +1747,6 @@ PostId</ColNames>
       <ColNames>UserId</ColNames>
       <OnDelete>restrict</OnDelete>
       <RefColNames>Id</RefColNames>
-      <RefKeyName>PK_AspNetUsers</RefKeyName>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
     <index id="586" parent="497" name="sqlite_autoindex_RefreshTokens_1">
@@ -1787,7 +1780,6 @@ PostId</ColNames>
       <ColNames>CreatorId</ColNames>
       <OnDelete>restrict</OnDelete>
       <RefColNames>Id</RefColNames>
-      <RefKeyName>PK_AspNetUsers</RefKeyName>
       <RefTableName>AspNetUsers</RefTableName>
     </foreign-key>
     <index id="593" parent="498" name="sqlite_autoindex_Tags_1">

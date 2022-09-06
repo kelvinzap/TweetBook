@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TweetBook.Contracts;
@@ -11,6 +13,7 @@ using TweetBook.Services;
 
 namespace TweetBook.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class TagsController : Controller
     {
         private readonly DataContext _dataContext;
@@ -49,6 +52,7 @@ namespace TweetBook.Controllers
         }
 
         [HttpGet(ApiRoutes.Tags.GetAll)]
+        [Authorize(Policy = "WorksFromCompanyPolicy")]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _dataContext.Tags.ToListAsync());

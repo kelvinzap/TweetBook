@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
@@ -42,13 +43,15 @@ namespace TweetBook.Services
                     Errors = new[] { "User with this email address already exists" }
                 };
             }
-            
+
+            var newUserId = Guid.NewGuid();
             var newUser = new IdentityUser
             {
+                Id = newUserId.ToString(),
                 UserName = email,
                 Email = email
             };
-            
+
             var user = await _userManager.CreateAsync(newUser, password);
 
             if (!user.Succeeded)
@@ -58,6 +61,9 @@ namespace TweetBook.Services
                     Errors = user.Errors.Select(x => x.Description)
                 };
             }
+
+            await _userManager.AddToRoleAsync(newUser, "Poster");
+            await _userManager.AddClaimAsync(newUser, new Claim("tag.view", "true"));
 
             return await GenerateAuthenticationResultForUser(newUser);
         }
@@ -83,6 +89,8 @@ namespace TweetBook.Services
                     Errors = new[] { "Email/Password combination is wrong" }
                 };
             }
+            
+            await _userManager.AddToRoleAsync(user, "admin");
 
             return await GenerateAuthenticationResultForUser(user);
         }
@@ -184,19 +192,29 @@ namespace TweetBook.Services
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_jwtSettings.Secret));
+            var claims = new List<Claim>
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                new Claim("id", user.Id)
+            };
+
+            var userRoles = await _userManager.GetRolesAsync(user);
+            claims.AddRange(userRoles.Select(userRole => new Claim("role", userRole)));
+
+            var userClaims = await _userManager.GetClaimsAsync(user);
+            claims.AddRange(userClaims);
+            
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new []
-                {
-                    new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                    new Claim(JwtRegisteredClaimNames.Email, user.Email),
-                    new Claim("id", user.Id)
-                }),
+                Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.UtcNow.Add(_jwtSettings.TokenLifeTime),
                 SigningCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256)
             };
 
+          
+            
             var token = tokenHandler.CreateToken(tokenDescriptor);
            
             var refreshToken = new RefreshToken
