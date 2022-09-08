@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -19,16 +21,19 @@ namespace TweetBook.Controllers
     public class PostsController : Controller
     {
         private readonly IPostService _postService;
+        private readonly IMapper _mapper;
 
-        public PostsController(DataContext context, IPostService postService)
+        public PostsController(DataContext context, IPostService postService, IMapper mapper)
         {
             _postService = postService;
+            _mapper = mapper;
         }
 
         [HttpGet(ApiRoutes.Posts.GetAll)]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _postService.GetAllAsync());
+            var posts = await _postService.GetAllAsync();
+            return Ok(_mapper.Map<List<PostResponse>>(posts));
         }
 
         [HttpGet(ApiRoutes.Posts.Get)]
@@ -66,13 +71,7 @@ namespace TweetBook.Controllers
             var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
             var locationUri = baseUrl + "/" + ApiRoutes.Posts.GetAll.Replace("{postId}", post.Id.ToString());
             
-            var response = new CreatePostResponse
-            {
-                Id = post.Id,
-                Name = post.Name
-            };
-            
-            return Created(locationUri, response);
+            return Created(locationUri, _mapper.Map<PostResponse>(post));
         }
 
         [HttpPut(ApiRoutes.Posts.Update)]
@@ -97,7 +96,7 @@ namespace TweetBook.Controllers
 
             var updated = await _postService.UpdatePostAsync(post);
             
-            return (updated) ? Ok(post) : NotFound();
+            return (updated) ? Ok(_mapper.Map<PostResponse>(post)) : NotFound();
 
         }
 

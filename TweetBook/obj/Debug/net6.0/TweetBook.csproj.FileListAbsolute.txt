@@ -72,3 +72,5 @@ C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\obj\Debug\net6.0\TweetBoo
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\obj\Debug\net6.0\ref\TweetBook.dll
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\obj\Debug\net6.0\TweetBook.pdb
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\obj\Debug\net6.0\TweetBook.genruntimeconfig.cache
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

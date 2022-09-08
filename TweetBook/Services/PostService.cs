@@ -21,7 +21,7 @@ namespace TweetBook.Services
 
         public async Task<IEnumerable<Post>> GetAllAsync()
         {
-            return await _dataContext.Posts.ToListAsync();
+            return await _dataContext.Posts.Include(x => x.Tags).ToListAsync();
         }
 
         public async Task<bool> CreateAsync(Post post)

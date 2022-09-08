@@ -6,117 +6,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b5da7ad-a965-4a5a-8ea6-cbcea104eccc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/Authorization/WorksForCompanyHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/Authorization/WorksForCompanyRequirement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Response/TagResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/MappingProfiles/DomainToResponseProfile.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/TweetBook/app.db-shm" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/TweetBook/app.db-wal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Humanizer.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.AspNetCore.JsonPatch.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.Data.Sqlite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/SQLitePCLRaw.batteries_v2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/SQLitePCLRaw.core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.staticwebassets.runtime.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/app.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/global.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/ref/TweetBook.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/alpine-x64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/linux-arm/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/linux-arm64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/linux-armel/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/linux-mips64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/linux-musl-x64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/linux-s390x/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/linux-x64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/linux-x86/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/osx-arm64/native/libe_sqlite3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/osx-x64/native/libe_sqlite3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/win-arm/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/win-arm64/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/win-x64/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/runtimes/win-x86/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/global.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/ref/TweetBook.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/dataSources/a80d9a86-d811-4173-9078-86094c6c1c53.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/dataSources/a80d9a86-d811-4173-9078-86094c6c1c53.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/AutoMapper.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Controllers/TagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Controllers/TagsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Installers/DbInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Installers/DbInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Services/IdentityService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/IdentityService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/Response/CreatePostResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Response/PostResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Controllers/PostsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Controllers/PostsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Services/PostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/PostService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/TweetBook.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/TweetBook.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/app.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net5.0/TweetBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net5.0/TweetBook.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net5.0/TweetBook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net5.0/TweetBook.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net5.0/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net5.0/app.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net5.0/ref/TweetBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net5.0/ref/TweetBook.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net5.0/TweetBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net5.0/TweetBook.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net5.0/TweetBook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net5.0/TweetBook.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net5.0/ref/TweetBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net5.0/ref/TweetBook.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/app.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/ref/TweetBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/ref/TweetBook.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/ref/TweetBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/ref/TweetBook.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/obj/TweetBook.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/TweetBook.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/obj/TweetBook.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/TweetBook.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/obj/TweetBook.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/TweetBook.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +133,9 @@
       <workItem from="1661903609883" duration="1030000" />
       <workItem from="1662067378691" duration="6589000" />
       <workItem from="1662130037530" duration="607000" />
-      <workItem from="1662427659058" duration="4636000" />
+      <workItem from="1662427659058" duration="6394000" />
+      <workItem from="1662571572024" duration="1200000" />
+      <workItem from="1662614643328" duration="12193000" />
     </task>
     <servers />
   </component>
