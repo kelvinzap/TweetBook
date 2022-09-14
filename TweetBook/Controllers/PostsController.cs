@@ -47,6 +47,8 @@ namespace TweetBook.Controllers
         [HttpPost(ApiRoutes.Posts.Create)]
         public async Task<IActionResult> Create([FromBody] CreatePostRequest request)
         {
+        
+            
             if (request == null || string.IsNullOrWhiteSpace(request.Name))
                 return BadRequest(new {error = "Invalid Request" });
             var tags = request.Tags.Select(tagName => new PostTag { TagName = tagName }).ToList();

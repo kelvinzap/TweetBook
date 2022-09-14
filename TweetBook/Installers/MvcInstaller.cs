@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
@@ -8,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using TweetBook.Authorization;
 using TweetBook.Domain;
+using TweetBook.Filter;
 using TweetBook.Options;
 using TweetBook.Services;
 
@@ -17,7 +19,12 @@ namespace TweetBook.Installers
     {
         public void InstallServices(IConfiguration configuration, IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(options =>
+                {
+                    options.Filters.Add<ValidationFilter>();
+                })
+                .AddFluentValidation(controllerConfig => 
+                    controllerConfig.RegisterValidatorsFromAssemblyContaining<Startup>());
 
             var jwtSettings = new JwtSettings();
             configuration.Bind(nameof(JwtSettings), jwtSettings);

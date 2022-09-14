@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "xmWG/8+74mWg9p8+EFXvFZoeqTgvHhvapuaah2bshD8sRCruOp+YMtaS4Czff+0Hk3MHka6JI9npJ7eAsiYk6w==",
+  "dgSpecHash": "djHnhEUxXbtYmfpTXb//G13R1/JeUUMQm0SaimKETC6xPlNRyv24Pft4TF9fGQ4tEzNYeWZ7cABHHqDNnUdF/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook\\TweetBook.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\John Onuoha\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\John Onuoha\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\John Onuoha\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\John Onuoha\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\John Onuoha\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\John Onuoha\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\John Onuoha\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.8\\microsoft.aspnetcore.authentication.jwtbearer.6.0.8.nupkg.sha512",
     "C:\\Users\\John Onuoha\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.8\\microsoft.aspnetcore.cryptography.internal.6.0.8.nupkg.sha512",

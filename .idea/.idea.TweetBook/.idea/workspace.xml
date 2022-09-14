@@ -6,17 +6,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b5da7ad-a965-4a5a-8ea6-cbcea104eccc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Response/TagResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/MappingProfiles/DomainToResponseProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/app.db-shm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/app.db-wal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/AutoMapper.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Response/ErrorModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Response/ErrorResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Filter/ValidationFilter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/Validators/CreatePostRequestValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/FluentValidation.AspNetCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/FluentValidation.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TweetBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/Response/CreatePostResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Response/PostResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/Request/CreatePostRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Request/CreatePostRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Contracts/V1/Request/CreateTagRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Contracts/V1/Request/CreateTagRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/Controllers/PostsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Controllers/PostsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Services/PostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Services/PostService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TweetBook/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Controllers/TagsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Controllers/TagsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/Installers/MvcInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/TweetBook.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/TweetBook.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/app.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.deps.json" afterDir="false" />
@@ -24,6 +26,7 @@
       <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/TweetBook.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/app.db" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/app.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/ref/TweetBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/bin/Debug/net6.0/ref/TweetBook.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/TweetBook.csproj.CoreCompileInputs.cache" afterDir="false" />
@@ -55,6 +58,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1f7cb9ac3d5a5fab7aef2a5949c4f74be6f88e3f9bcd22517a890d671f4454/IUserRoleStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4ea681aa1df24442c1a5e1e18582b1a2d29ac5bfd41390c94a5d2cc958b5ff/UserManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/733544ec34069c719067afd88ed228d112e572e6cf48fb3d992a9b26b29/UserStore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/933f374d88a082deeb91a8715cb947ccef921a3d1aa957af5ca5624f813a2b8/DateTime.Windows.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6ad457575d35dcbff26c9a5e3fb1d92f1d3c55f25ef6ebf475367b5d8/List.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TweetBook/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -135,7 +140,9 @@
       <workItem from="1662130037530" duration="607000" />
       <workItem from="1662427659058" duration="6394000" />
       <workItem from="1662571572024" duration="1200000" />
-      <workItem from="1662614643328" duration="12193000" />
+      <workItem from="1662614643328" duration="13793000" />
+      <workItem from="1662672654524" duration="6319000" />
+      <workItem from="1662751057706" duration="15483000" />
     </task>
     <servers />
   </component>
@@ -149,6 +156,40 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TweetBook/Contracts/V1/Response/ErrorResponse.cs</url>
+          <line>6</line>
+          <properties documentPath="C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\Contracts\V1\Response\ErrorResponse.cs" initialLine="6" containingFunctionPresentation="property 'Errors'">
+            <startOffsets>
+              <option value="145" />
+              <option value="150" />
+            </startOffsets>
+            <endOffsets>
+              <option value="149" />
+              <option value="154" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/TweetBook/Filter/ValidationFilter.cs</url>
+          <line>14</line>
+          <properties documentPath="C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\Filter\ValidationFilter.cs" initialLine="14" containingFunctionPresentation="method 'OnActionExecutionAsync'">
+            <startOffsets>
+              <option value="433" />
+            </startOffsets>
+            <endOffsets>
+              <option value="434" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

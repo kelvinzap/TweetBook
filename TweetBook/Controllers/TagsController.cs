@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -28,23 +29,31 @@ namespace TweetBook.Controllers
         [HttpPost(ApiRoutes.Tags.Create)]
         public async Task<IActionResult> Create([FromBody] CreateTagRequest tagRequest)
         {
-            if (tagRequest.Tags == null)
-            {
-                return BadRequest();
-            }
+            var tags = tagRequest.Tags.ToList();
 
-            var tags = tagRequest.Tags;
-            
-            foreach (var tagName in tags)
+            var badTags = tags.Where(string.IsNullOrWhiteSpace).ToList();
+            badTags.ForEach(x =>
             {
-                var tag = new Tag
-                {
-                    Name = tagName,
-                    CreatedOn = DateTime.UtcNow,
-                    CreatorId = HttpContext.GetUserById()
-                };
-                _dataContext.Tags.Add(tag);
-            }
+                tags.Remove(x);
+            });
+
+           tags.ForEach(tagName =>
+           {
+               tagName = tagName.ToLower().Replace(" ", "");
+               
+
+               var tags = _dataContext.Tags.SingleOrDefault(i => i.Name == tagName && !string.IsNullOrWhiteSpace(i.Name));
+
+               if (tags == null)
+               {
+                   _dataContext.Tags.Add(new Tag
+                   {
+                       Name = tagName,
+                       CreatorId = HttpContext.GetUserById(),
+                       CreatedOn = DateTime.UtcNow
+                   });
+               }
+           });
 
             var created = await _dataContext.SaveChangesAsync();
             
