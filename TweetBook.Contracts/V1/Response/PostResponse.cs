@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Identity;
-using TweetBook.Domain;
 
 namespace TweetBook.Contracts.V1.Response
 {

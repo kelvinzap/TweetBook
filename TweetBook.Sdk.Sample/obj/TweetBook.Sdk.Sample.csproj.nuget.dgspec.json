@@ -1,0 +1,184 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\TweetBook.Sdk.Sample.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Contracts\\TweetBook.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Contracts\\TweetBook.Contracts.csproj",
+        "projectName": "TweetBook.Contracts",
+        "projectPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Contracts\\TweetBook.Contracts.csproj",
+        "packagesPath": "C:\\Users\\John Onuoha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\John Onuoha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\TweetBook.Sdk.Sample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\TweetBook.Sdk.Sample.csproj",
+        "projectName": "TweetBook.Sdk.Sample",
+        "projectPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\TweetBook.Sdk.Sample.csproj",
+        "packagesPath": "C:\\Users\\John Onuoha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\John Onuoha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj": {
+                "projectPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj",
+        "projectName": "Tweetbook.Sdk",
+        "projectPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj",
+        "packagesPath": "C:\\Users\\John Onuoha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\John Onuoha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Contracts\\TweetBook.Contracts.csproj": {
+                "projectPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Contracts\\TweetBook.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Refit": {
+              "target": "Package",
+              "version": "[6.3.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

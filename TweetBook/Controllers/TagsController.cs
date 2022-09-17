@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TweetBook.Contracts;
 using TweetBook.Contracts.V1.Request;
+using TweetBook.Contracts.V1.Response;
 using TweetBook.Data;
 using TweetBook.Domain;
 using TweetBook.Extensions;
@@ -27,6 +28,7 @@ namespace TweetBook.Controllers
         }
 
         [HttpPost(ApiRoutes.Tags.Create)]
+        [ProducesResponseType(typeof(TagResponse), 201)]
         public async Task<IActionResult> Create([FromBody] CreateTagRequest tagRequest)
         {
             var tags = tagRequest.Tags.ToList();

@@ -77,3 +77,5 @@ C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net6.0\AutoMapp
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net6.0\TweetBook.Contracts.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook\bin\Debug\net6.0\TweetBook.Contracts.pdb

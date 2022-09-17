@@ -1,0 +1,15 @@
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\bin\Debug\net6.0\Tweetbook.Sdk.deps.json
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\bin\Debug\net6.0\Tweetbook.Sdk.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\bin\Debug\net6.0\ref\Tweetbook.Sdk.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\bin\Debug\net6.0\Tweetbook.Sdk.pdb
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\bin\Debug\net6.0\TweetBook.Contracts.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\bin\Debug\net6.0\TweetBook.Contracts.pdb
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\obj\Debug\net6.0\Tweetbook.Sdk.csproj.AssemblyReference.cache
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\obj\Debug\net6.0\Tweetbook.Sdk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\obj\Debug\net6.0\Tweetbook.Sdk.AssemblyInfoInputs.cache
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\obj\Debug\net6.0\Tweetbook.Sdk.AssemblyInfo.cs
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\obj\Debug\net6.0\Tweetbook.Sdk.csproj.CoreCompileInputs.cache
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\obj\Debug\net6.0\Tweetbook.Sdk.csproj.CopyComplete
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\obj\Debug\net6.0\Tweetbook.Sdk.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\obj\Debug\net6.0\ref\Tweetbook.Sdk.dll
+C:\Users\John Onuoha\RiderProjects\TweetBook\Tweetbook.Sdk\obj\Debug\net6.0\Tweetbook.Sdk.pdb
