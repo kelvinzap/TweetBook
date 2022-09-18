@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using TweetBook.Cache;
 using TweetBook.Contracts;
 using TweetBook.Contracts.V1.Request;
 using TweetBook.Contracts.V1.Response;
