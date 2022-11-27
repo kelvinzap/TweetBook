@@ -19,3 +19,24 @@ C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\Tweetbook.Sdk.pdb
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\TweetBook.Contracts.pdb
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\TweetBook.Sdk.Sample.csproj.CopyComplete
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\TweetBook.Sdk.Sample.exe
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\TweetBook.Sdk.Sample.deps.json
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\TweetBook.Sdk.Sample.runtimeconfig.json
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\TweetBook.Sdk.Sample.dll
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\TweetBook.Sdk.Sample.pdb
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\Refit.dll
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\TweetBook.Contracts.dll
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\Tweetbook.Sdk.dll
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\Tweetbook.Sdk.pdb
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\bin\Debug\net6.0\TweetBook.Contracts.pdb
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\TweetBook.Sdk.Sample.csproj.AssemblyReference.cache
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\TweetBook.Sdk.Sample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\TweetBook.Sdk.Sample.AssemblyInfoInputs.cache
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\TweetBook.Sdk.Sample.AssemblyInfo.cs
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\TweetBook.Sdk.Sample.csproj.CoreCompileInputs.cache
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\TweetBook.Sdk.Sample.csproj.CopyComplete
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\TweetBook.Sdk.Sample.dll
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\refint\TweetBook.Sdk.Sample.dll
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\TweetBook.Sdk.Sample.pdb
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\TweetBook.Sdk.Sample.genruntimeconfig.cache
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Sdk.Sample\obj\Debug\net6.0\ref\TweetBook.Sdk.Sample.dll

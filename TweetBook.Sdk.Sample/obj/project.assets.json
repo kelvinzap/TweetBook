@@ -8,10 +8,14 @@
           "System.Net.Http.Json": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Refit.dll": {}
+          "lib/net6.0/Refit.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Refit.dll": {}
+          "lib/net6.0/Refit.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netstandard2.0/refit.props": {},
@@ -24,10 +28,14 @@
           "System.Text.Json": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Net.Http.Json.dll": {}
+          "lib/net6.0/System.Net.Http.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Net.Http.Json.dll": {}
+          "lib/net6.0/System.Net.Http.Json.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -36,10 +44,14 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -51,10 +63,14 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {}
+          "lib/net6.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {}
+          "lib/net6.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -73,10 +89,14 @@
           "System.Text.Encodings.Web": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Text.Json.dll": {}
+          "lib/net6.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Text.Json.dll": {}
+          "lib/net6.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -284,19 +304,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\John Onuoha\\.nuget\\packages\\": {}
+    "C:\\Users\\USER\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\TweetBook.Sdk.Sample.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\TweetBook.Sdk.Sample.csproj",
       "projectName": "TweetBook.Sdk.Sample",
-      "projectPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\TweetBook.Sdk.Sample.csproj",
-      "packagesPath": "C:\\Users\\John Onuoha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\obj\\",
+      "projectPath": "C:\\Users\\USER\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\TweetBook.Sdk.Sample.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\RiderProjects\\TweetBook\\TweetBook.Sdk.Sample\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\John Onuoha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -304,14 +329,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj": {
-              "projectPath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj"
+            "C:\\Users\\USER\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj": {
+              "projectPath": "C:\\Users\\USER\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj"
             }
           }
         }
@@ -331,7 +357,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -340,7 +367,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

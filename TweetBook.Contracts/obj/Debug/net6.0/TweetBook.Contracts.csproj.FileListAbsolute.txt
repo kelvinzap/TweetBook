@@ -10,3 +10,15 @@ C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\TweetBook.Contracts.dll
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\ref\TweetBook.Contracts.dll
 C:\Users\John Onuoha\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\TweetBook.Contracts.pdb
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\bin\Debug\net6.0\TweetBook.Contracts.deps.json
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\bin\Debug\net6.0\TweetBook.Contracts.dll
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\bin\Debug\net6.0\TweetBook.Contracts.pdb
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\TweetBook.Contracts.csproj.AssemblyReference.cache
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\TweetBook.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\TweetBook.Contracts.AssemblyInfoInputs.cache
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\TweetBook.Contracts.AssemblyInfo.cs
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\TweetBook.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\TweetBook.Contracts.dll
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\refint\TweetBook.Contracts.dll
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\TweetBook.Contracts.pdb
+C:\Users\USER\RiderProjects\TweetBook\TweetBook.Contracts\obj\Debug\net6.0\ref\TweetBook.Contracts.dll

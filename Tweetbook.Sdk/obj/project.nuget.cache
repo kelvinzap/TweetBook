@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "lRZCUrYy6HSA1tF1d93q0VbwfoK5D5Dj554cHDG4/i3A2FM8DZgnZ1QI63HqrhhLsBmy3RsvO07lLKD1+/fltw==",
+  "dgSpecHash": "JPf0wlaZRJdtfI+9tfnPeeYw23FJ8Wqni+KAW9vHht2agFfF0pRlOjNyd02c11pmOebeYuQfGN267Wd3RYPZ5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\John Onuoha\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj",
+  "projectFilePath": "C:\\Users\\USER\\RiderProjects\\TweetBook\\Tweetbook.Sdk\\Tweetbook.Sdk.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\John Onuoha\\.nuget\\packages\\refit\\6.3.2\\refit.6.3.2.nupkg.sha512",
-    "C:\\Users\\John Onuoha\\.nuget\\packages\\system.net.http.json\\6.0.0\\system.net.http.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\John Onuoha\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\John Onuoha\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\John Onuoha\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+    "C:\\Users\\USER\\.nuget\\packages\\refit\\6.3.2\\refit.6.3.2.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.net.http.json\\6.0.0\\system.net.http.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
